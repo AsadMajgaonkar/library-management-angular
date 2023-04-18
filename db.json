@@ -1,18 +1,11 @@
 {
   "posts": [
     {
-      "id": 2,
-      "name": "asada",
-      "email": "asad@as",
-      "mobile": "asas",
+      "id": 4,
+      "name": "asad",
+      "email": "alice",
+      "mobile": "3443",
       "city": "asas"
-    },
-    {
-      "id": 3,
-      "name": "asa",
-      "email": "asa2@",
-      "mobile": "asas",
-      "city": "asa"
     }
   ],
   "comments": [],

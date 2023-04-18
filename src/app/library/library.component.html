@@ -1,23 +1,19 @@
-<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
-
 <nav class="navbar navbar-light bg-dark">
     <div class="container-fluid">
-        <h2 class="text-light primary py-3">Student management system</h2>
+        <h2 class="text-light primary py-3">Library management system</h2>
         <div class="d-flex"><button class="btn btn-success" (click)="add()" data-toggle="modal" data-target="#exampleModal">Add
-                student</button>&nbsp; <button class="btn btn-warning">Logout</button></div>
+                student</button></div>
     </div>
 </nav>
 
 <table class="table mt-4">
     <thead>
         <tr>
-            <th scope="col">S.Id</th>
+            <th scope="col">Id</th>
             <th scope="col">Name</th>
-            <th scope="col">Email</th>
+            <th scope="col">Books Issued</th>
             <th scope="col">Mobile</th>
-            <th scope="col">City</th>
+            <th scope="col">Address</th>
             <th scope="col">Action</th>
         </tr>
     </thead>
@@ -36,18 +32,13 @@
     </tbody>
 </table>
 
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-</button> -->
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Studet Management</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Library Management</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -57,29 +48,27 @@
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name</label>
                         <input formControlName="name" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
+                            placeholder="Student Name">
                         <small *ngIf="formValue.get('name')?.invalid && formValue.get('name')?.touched" class="text-danger">Name is Required</small>    
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
-                            <small *ngIf="formValue.get('email')?.invalid && formValue.get('email')?.touched" class="text-danger">email is Required</small>     
+                        <label for="exampleInputEmail1">Books Issued</label>
+                        <input formControlName="email" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Books Name">
+                            <small *ngIf="formValue.get('email')?.invalid && formValue.get('email')?.touched" class="text-danger">Book name is Required</small>     
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Mobile</label>
-                        <input formControlName="mobile" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <label for="exampleInputEmail1">Mobile No.</label>
+                        <input formControlName="mobile" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="Enter email">
-                            <small *ngIf="formValue.get('mobile')?.invalid && formValue.get('mobile')?.touched" class="text-danger">mobile is Required</small> 
+                            <small *ngIf="formValue.get('mobile')?.invalid && formValue.get('mobile')?.touched" class="text-danger">Mobile no. is Required</small> 
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">city</label>
+                        <label for="exampleInputEmail1">Address</label>
                         <input formControlName="city" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
-                            <small *ngIf="formValue.get('city')?.invalid && formValue.get('city')?.touched" class="text-danger">city is Required</small> 
+                            placeholder="Student Address">
+                            <small *ngIf="formValue.get('city')?.invalid && formValue.get('city')?.touched" class="text-danger">Address is Required</small> 
                     </div>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
             <div class="modal-footer">
