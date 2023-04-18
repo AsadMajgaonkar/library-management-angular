@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "name": "asada",
+      "email": "asad@as",
+      "mobile": "asas",
+      "city": "asas"
+    },
+    {
+      "id": 3,
+      "name": "asa",
+      "email": "asa2@",
+      "mobile": "asas",
+      "city": "asa"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
